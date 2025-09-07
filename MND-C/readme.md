@@ -9,7 +9,7 @@ This repository contains all experimental code, datasets, and related configurat
 - `configs/`: Experimental parameter configuration files (e.g., learning rate, batch size, etc.)
 - `requirements.txt`: Dependency list
 
-## Usage Instructions (After Open-sourcing)
+## Usage Instructions
 1. Clone the repository to your local machine
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run the training script: `python MND-C/main.py --config configs/default.yaml`
@@ -17,6 +17,7 @@ This repository contains all experimental code, datasets, and related configurat
 
 ## Dataset Description
 The datasets used in this study are derived from [TUDataset](https://chrsmrrs.github.io/datasets/docs/datasets/?utm_source=chatgpt.com). They were processed through [Select batches of random subgraphs and integrate them separately to form relatively small-scale datasets] before being used in experiments. The open-sourced version has removed all privacy information, retaining only the feature data necessary for the experiments.
+
 
 
 
