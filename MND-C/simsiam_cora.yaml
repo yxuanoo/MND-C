@@ -1,0 +1,28 @@
+data_name: cora
+dataset: cora
+model:
+  name: SimSiam
+  backbone: GCN
+  version: original
+  proj_layers: 3
+
+train:
+  optimizer:
+    name: sgd
+    weight_decay: 0.0005
+    momentum: 0.9
+  warmup_epochs: 10
+  warmup_lr: 0.01
+  base_lr: 0.01
+  final_lr: 0.9
+  num_epochs: 320 # this parameter influence the lr decay
+  stop_at_epoch: 300 # has to be smaller than num_epochs
+  batch_size: 256
+
+
+
+
+seed: null # None type for yaml file
+# two things might lead to stochastic behavior other than seed:
+# worker_init_fn from dataloader and torch.nn.functional.interpolate
+# (keep this in mind if you want to achieve 100% deterministic)
