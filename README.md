@@ -4,7 +4,9 @@ Project Overview
 This repository contains all experimental code, datasets, and related configuration files used in [Missing Node Detection Based on Graph Self-supervised Contrastive Learning], aiming to support the reproducibility and transparency of the research.
 
 Content Structure
+
 datasets/: Experimental datasets, including split files for training, validation, and test sets
+
 MND-C/: Core model code folder, including model definitions, training scripts, evaluation scripts, and utility functions
 configs/: Experimental parameter configuration files (e.g., learning rate, batch size, etc.)
 requirements.txt: Dependency list
